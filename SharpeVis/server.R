@@ -6,8 +6,6 @@
 # # server.R
 
 library(quantmod)
-#source("helpers.R")
-options(download.file.method="libcurl")
 
 shinyServer(function(input, output) {
 
