@@ -1,7 +1,7 @@
 <style>
 .reveal {
   font-family: "Didy Bold", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 200;
   letter-spacing: -0.02em;
   color: #003333;
@@ -31,9 +31,7 @@
 Sharpe Ratio & Cummulative Return Vis
 ========================================================
 css: jaystyle.css
-author: Jay Urbain
-
-October 24, 2015
+author: Jay Urbain, October 24, 2015
 
 - Sharpe, W. F. (1966). "Mutual Fund Performance". Journal of Business 39 (S1): 119–138. [doi:10.1086/294846](http://www.iijournals.com/doi/abs/10.3905/jpm.1994.409501).
 - Sharpe, William F. (1994). "[The Sharpe Ratio](http://www.stanford.edu/~wfsharpe/art/sr/sr.htm)". The Journal of Portfolio Management 21 (1): 49–58.
