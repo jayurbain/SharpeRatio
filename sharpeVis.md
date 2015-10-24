@@ -28,14 +28,17 @@
 }
 </style>
 
-Sharpe Ratio
+Sharpe Ratio & Cummulative Return Vis
 ========================================================
 css: jaystyle.css
 author: Jay Urbain
 
-Sharpe Ratio & Cummulative Return Vis
-
 October 24, 2015
+
+- Sharpe, W. F. (1966). "Mutual Fund Performance". Journal of Business 39 (S1): 119–138. [doi:10.1086/294846](http://www.iijournals.com/doi/abs/10.3905/jpm.1994.409501).
+- Sharpe, William F. (1994). "[The Sharpe Ratio](http://www.stanford.edu/~wfsharpe/art/sr/sr.htm)". The Journal of Portfolio Management 21 (1): 49–58.
+- Jobson JD; Korkie B (September 1981). "Performance hypothesis testing with the Sharpe and Treynor measures". The Journal of Finance 36 (4): 888–908. [JSTOR 2327554](http://www.jstor.org/stable/2327554?&seq=1#page_scan_tab_contents).
+- Sharpe ratio. (2015, August 28). In Wikipedia, The Free Encyclopedia. Retrieved 22:03, October 24, 2015, from [https://en.wikipedia.org/w/index.php?title=Sharpe_ratio&oldid=678344815](https://en.wikipedia.org/w/index.php?title=Sharpe_ratio&oldid=678344815)
 
 Objective
 ========================================================
@@ -55,13 +58,8 @@ Sharpe Ratio
 The Sharpe Ratio is a measure for calculating risk-adjusted return. It was developed by Nobel laureate William F. Sharpe.
 
 The ratio measures the excess return (or risk premium) per unit of deviation in an investment asset or a trading strategy, typically referred to as risk.
+![](sharpe_formula.png)
 
-$$Ratio_a=\frac{E[R_a - R_b]}{\sigma_{R_a-R_b}}=\frac{E[R_a - R_b]}{\sqrt{R_a-R_b}}$$
-
-$$R_a = Asset\ return$$
-$$R_b = Return\ of\ benchmark\ asset$$
-$$E[R_a - R_b] = Expected\ excess\ return$$
-$$\sigma_{ab} = Standard\ deviation\ of\ this\ excess\ return$$
 
 Sharpe Vis: AAPL relative to SPY benchmark
 ========================================================
@@ -81,10 +79,3 @@ The Sharpe ratio for Facebook (FB) relative to the S&P Index (SPY) from 2013-01-
 
 Since the ratio is strongly postive, FB outperformed the SPY benchmark asset with respect to risk adjusted return, and clearly outperformed AAPL when comparing Sharpe ratios to the SPY.
 
-References
-========================================================
-- Sharpe, W. F. (1966). "Mutual Fund Performance". Journal of Business 39 (S1): 119–138. [doi:10.1086/294846](http://www.iijournals.com/doi/abs/10.3905/jpm.1994.409501).
-- Sharpe, William F. (1994). "[The Sharpe Ratio](http://www.stanford.edu/~wfsharpe/art/sr/sr.htm)". The Journal of Portfolio Management 21 (1): 49–58.
-- Jobson JD; Korkie B (September 1981). "Performance hypothesis testing with the Sharpe and Treynor measures". The Journal of Finance 36 (4): 888–908. [JSTOR 2327554](http://www.jstor.org/stable/2327554?&seq=1#page_scan_tab_contents).
-- Gibbons M; Ross S; Shanken J (September 1989). "A test of the efficiency of a given portfolio". Econometrica 57 (5): 1121–1152. [JSTOR 1913625](https://www.jstor.org/stable/1913625?seq=1#page_scan_tab_contents).
-- Sharpe ratio. (2015, August 28). In Wikipedia, The Free Encyclopedia. Retrieved 22:03, October 24, 2015, from [https://en.wikipedia.org/w/index.php?title=Sharpe_ratio&oldid=678344815](https://en.wikipedia.org/w/index.php?title=Sharpe_ratio&oldid=678344815)
