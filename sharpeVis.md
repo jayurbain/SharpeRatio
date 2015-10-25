@@ -58,6 +58,20 @@ The Sharpe Ratio is a measure for calculating risk-adjusted return. It was devel
 The ratio measures the excess return (or risk premium) per unit of deviation in an investment asset or a trading strategy, typically referred to as risk.
 ![](sharpe_formula.png)
 
+Sample calculation of GOOGLE relative to S&P Index for "2013-01-01" to "2014-01-01":
+
+
+```
+[1] "GOOG Sharpe Ratio with respect to SPY: 0.64"
+```
+
+```
+[1] "GOOGL Total Cumulative Return: 0.55"
+```
+
+```
+[1] "SPY Total Cumulative Return: 0.29"
+```
 
 Sharpe Vis: AAPL relative to SPY benchmark
 ========================================================

@@ -65,6 +65,25 @@ $$R_b = Return\ of\ benchmark\ asset$$
 $$E[R_a - R_b] = Expected\ excess\ return$$
 $$\sigma_{ab} = Standard\ deviation\ of\ this\ excess\ return$$
 ```
+Sample calculation of GOOGLE relative to S&P Index for "2013-01-01" to "2014-01-01":
+
+```{r, echo=FALSE}
+library(quantmod)
+dates<-c("2013-01-01", "2014-01-01")
+stk<-getSymbols("googl", src="yahoo", from=dates[1], to=dates[2], auto.assign = FALSE)
+spy<-getSymbols("spy", src="yahoo",from=dates[1], to=dates[2], auto.assign=FALSE)
+names(stk)<-c("Open", "High", "Low", "Close", "Volume", "Adjusted")
+names(spy)<-c("Open", "High", "Low", "Close", "Volume", "Adjusted")
+stk$adjCumReturn<-stk$Adjusted/as.double(stk$Adjusted[1])
+spy$adjCumReturn<-spy$Adjusted/as.double(spy$Adjusted[1])
+stkRetSd<-sd(stk$adjCumReturn, na.rm=TRUE)
+stkCumReturn<-stk$adjCumReturn[length(stk$adjCumReturn)]-1
+spyMeanCumRet<-spy$adjCumReturn[length(spy$adjCumReturn)]-1
+sharpe<-mean(stk$adjCumReturn - spy$adjCumReturn) / stkRetSd
+print( paste("GOOG", "Sharpe Ratio", "with respect to", "SPY:", format(round(sharpe, 2), nsmall = 2)) )
+print( paste("GOOGL", "Total Cumulative Return:", format(round(stkCumReturn, 2), nsmall = 2)) )
+print( paste("SPY", "Total Cumulative Return:", format(round(spyMeanCumRet, 2), nsmall = 2)) )
+```
 
 Sharpe Vis: AAPL relative to SPY benchmark
 ========================================================
